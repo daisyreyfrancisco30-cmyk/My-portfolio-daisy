@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daisyrey Francisco | Portfolio</title>
+
+    <style>
+<        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0b1428;
+            color: white;
+            line-height: 1.7;
+        }
+
+        header {
+            background-color: #101d35;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+            color: #ff9f43;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 22px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #ff9f43;
+        }
+
+        .container {
+            width: 85%;
+            max-width: 1050px;
+            margin: auto;
+        }
+
+        section {
+            padding: 65px 0;
+            border-bottom: 1px solid #26344d;
+            scroll-margin-top: 70px;
+        }
+
+        h2 {
+            color: #ff9f43;
+            font-size: 28px;
+            margin-bottom: 25px;
+        }
+
+        .home {
+            min-height: 400px;
+            display: flex;
+            align-items: center;
+        }
+
+        .home h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        .home h3 {
+            color: #ff9f43;
+            font-size: 23px;
+            margin-bottom: 15px;
+        }
+
+        .home p {
+            max-width: 650px;
+            color: #d1d8e5;
+        }
+
+        .card {
+            background: #15233c;
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 18px;
+            border-left: 4px solid #ff9f43;
+        }
+
+        .card h3 {
+            color: #ffb366;
+            margin-bottom: 8px;
+        }
+
+        .card p, .card li {
+            color: #d1d8e5;
+        }
+
+        ul {
+            padding-left: 22px;
+        }
+
+        .contact p {
+            margin-bottom: 12px;
+        }
+
+        .contact a {
+            color: #ffb366;
+            text-decoration: none;
+        }
+
+        .java-box {
+            background: #080e1a;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            color: #b7e4c7;
+        }
+
+        pre {
+            white-space: pre-wrap;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #101d35;
+            color: #bfc9d9;
+        }
+
+        @media (max-width: 650px) {
+            header {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            nav {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 12px;
+            }
+
+            nav a {
+                margin: 0;
+            }
+
+            .home h1 {
+                font-size: 32px;
+            }
+
+            .container {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">My Portfolio</div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#personal">Personal Info</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#java">Java Code</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+
+        <!-- HOME -->
+        <section id="home" class="home">
+            <div>
+                <h3>Hello, Welcome to My Portfolio!</h3>
+                <h1>I'm Daisyrey Francisco</h1>
+                <p>
+                    I am a student who enjoys learning new things
+                    and developing my skills. I love arts, drawing,
+                    listening to music, taking pictures of sunsets,
+                    and going to the beach. I believe that hard work
+                    and determination can help me achieve my dreams.
+                </p>
+            </div>
+        </section>
+
+        <!-- PERSONAL INFORMATION -->
+        <section id="personal">
+            <h2>Personal Information</h2>
+
+            <div class="card">
+                <h3>About Me</h3>
+                <p><strong>Name:</strong> Daisyrey Francisco</p>
+                <p><strong>Course:</strong> BS Information Technology</p>
+                <p><strong>Nationality:</strong> Filipino</p>
+                <p><strong>Hobbies:</strong> Drawing, listening to music,
+                photography, and going to the beach.</p>
+            </div>
+        </section>
+
+        <!-- EDUCATION -->
+        <section id="education">
+            <h2>Educational Background</h2>
+
+            <div class="card">
+                <h3>College</h3>
+                <p>BS Information Technology</p>
+                <p>Our Lady of the Sacred Heart College of Guimba, Inc.</p>
+            </div>
+
+            <div class="card">
+                <h3>Senior High School</h3>
+                <p>Triala National High School</p>
+            </div>
+
+            <div class="card">
+                <h3>Junior High School</h3>
+                <p>Triala National High School</p>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills">
+            <h2>Skills</h2>
+
+            <div class="card">
+                <h3>Technical Skills</h3>
+                <ul>
+                    <li>Basic HTML</li>
+                    <li>Basic CSS</li>
+                    <li>Basic Java Programming</li>
+                    <li>Microsoft Office</li>
+                    <li>Computer Literacy</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Personal Competencies</h3>
+                <ul>
+                    <li>Creativity</li>
+                    <li>Communication Skills</li>
+                    <li>Time Management</li>
+                    <li>Problem Solving</li>
+                    <li>Willingness to Learn</li>
+                    <li>Responsibility</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- JAVA PROJECT -->
+        <section id="java">
+            <h2>CC102 Java Programming Project</h2>
+
+            <div class="card">
+                <h3>My Final Java Game</h3>
+                <p>
+                    This section is for my Java programming project
+                    from CC102. It will contain the source code
+                    of my final game.
+                </p>
+            </div>
+
+            <div class="java-box">
+                <pre>
+// Paste your actual Java game source code here.
+                </pre>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="contact">
+            <h2>Contact Information</h2>
+
+            <div class="card">
+                <p><strong>Email:</strong>
+                    <a href="mailto:daisyreyfrancisco30@gmail.com">
+                    daisyreyfrancisco30@gmail.com</a>
+                </p>
+
+                <p><strong>Phone:</strong> 09675179581</p>
+                <p><strong>Location:</strong> Philippines</p>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>© 2026 Daisyrey Francisco | Personal Portfolio</p>
+        <p>Learning Today, Building My Future.</p>
+    </footer>
+
+</body>
+</html>
